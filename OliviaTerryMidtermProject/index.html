@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealer App</title>
+
+    <!-- defining all the JavaScript functions used in this project -->
+    <script type="text/javascript" src="./static/js/main_javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+    <!-- page title -->
+    <h1>Car Dealer App</h1>
+    <hr>
+
+    <!-- main page container -->
+    <div class="car-dealer">
+        <!-- left panel for user input (car options)-->
+        <div class="car-options">
+            <form id="car-info">
+
+                <!-- Car Type -->
+                <div class="car-type">
+                    <!-- car types dropdown -->
+                    <label for="car-type-options">Car Type</label><br>
+                    <select name="car-type-options" id="cars">
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="Mustang">Mustang</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <!-- Car Color -->
+                <div class="car-color">
+                    <!-- car colors dropdown -->
+                    <label for="car-color-options">Car Color</label><br>
+                    <select name="car-color-options" id="colors">
+                        <option id="color-1"></option>
+                        <option id="color-2"></option>
+                        <option id="color-3"></option>
+                    </select>
+                </div>
+
+                <br><br>
+
+                <!-- Insurance Plan -->
+                <div class="insurance">
+                    <!-- accept/decline insurance -->
+                    <label for="insurance-plan">Insurance Plan</label><br>
+                    <input type="radio" id="uninsured" name="insurance-plan" value="no">No Insurance<br>
+                    <input type="radio" id="insured" name="insurance-plan" value="yes" checked>Three Year Insurance<br>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- right panel for app-generated info (car details) -->
+        <div class="car-details">
+
+            <!-- Car Image -->
+            <img id="car-photo" src="" alt="car photo">
+
+            <br>
+
+            <!-- Car Description -->
+            <div class="description-section">
+                <label for="car-description">Description</label><br>
+                <textarea readonly id="car-description" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- running the main_driver method -->
+    <script type="text/javascript"> main_driver() </script>
+</body>
+
+</html>

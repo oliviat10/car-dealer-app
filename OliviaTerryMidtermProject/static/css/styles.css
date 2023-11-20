@@ -1,0 +1,69 @@
+/* page body */
+body {
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* "Car Dealer App" */
+h1 {
+    text-align:center;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* container for two main panels */
+.car-dealer {
+    display: flex;
+}
+
+/* left panel for user input */
+.car-options {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 15px;
+    flex: 1;
+    max-width: 20%;
+    min-width:fit-content;
+}
+
+/* app-generated car details*/
+.car-details {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    min-height: 800px;
+}
+
+/* image specs */
+#car-photo {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    max-height: 70%;
+}
+
+/* textarea box */
+#car-description {
+    width:95%;
+    white-space: pre;
+    resize:vertical;
+    text-wrap:wrap;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    position: static;
+    max-height: 40%;
+}
+
+/* make labels bold */
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* mobile responsiveness */
+@media (max-width: 600px) {
+
+    .car-dealer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
